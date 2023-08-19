@@ -7,8 +7,20 @@ public class EfficientAlgorithm {
         System.out.println("Enter an integer number larger than 100000:");
         long n = scanner.nextInt();
 
+        while (n < 100000) {
+            System.out.println("Please enter a number greater than 100000:");
+            n = scanner.nextInt();
+
+        }
+
+
         System.out.println("Enter an integer number less than 21:");
         int m = scanner.nextInt();
+
+        while (m > 20) {
+            System.out.println("Please enter a number less than 20:");
+            m = scanner.nextInt();
+        }
 
         long result = sum(n);
 
